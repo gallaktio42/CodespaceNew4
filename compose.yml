@@ -1,0 +1,8 @@
+version: '3.8'  # Укажите версию Docker Compose
+
+services:
+  webserver:
+    image: ghcr.io/gallaktio42/codespacenew4/node-app:latest  # Замените на ваш образ
+    ports:
+      - 5050:5050  # Маппинг портов
+    restart: unless-stopped
